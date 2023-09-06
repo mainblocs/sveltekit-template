@@ -1,0 +1,10 @@
+name = "mainblocs-template"
+account_id = ""
+
+main = "./.cloudflare/worker.js"
+site.bucket = "./.cloudflare/public"
+
+build.command = "npm run build"
+
+compatibility_date = "2023-09-04"
+workers_dev = true
