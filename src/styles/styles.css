@@ -1,0 +1,43 @@
+
+@keyframes hideNav{
+    from{
+        height: 700px;
+        top: 0;
+    }
+    to{
+        position: relative;
+        height: 0;
+        top: -700px;
+    }
+}
+@keyframes showNav{
+    from{
+        position: relative;
+        height: 0;
+        top: -700px;
+    }
+    to{
+        position: fixed;
+        height: 700px;
+        top: 0;
+    }
+}
+.showDropDownNav{
+    animation: showNav 0.3s ease-in-out forwards;
+}
+.hideDropDownNav{
+    animation: hideNav 0.3s ease-in-out forwards;
+}
+.dropDownNavContainer{
+    position: relative;
+    top: -700px;
+    left:0;
+    width: 100%;
+    right: 0;
+    height: 0px;
+    z-index: 104;
+}
+.CommentEditorTheme__paragraph {
+    margin: 0;
+    position: 'relative';
+  }
